@@ -1,0 +1,324 @@
+# Comprehensive Markdown Guide
+## Introduction to Advanced Markdown Features
+
+### 1. Text Formatting Basics
+
+This is *italic* and this is **bold**
+Here's ***bold italic*** text
+~~Strikethrough~~ text
+`inline code`
+
+### 2. Lists
+
+#### Ordered List
+1. First item
+2. Second item
+   1. Sub-item 2.1
+   2. Sub-item 2.2
+3. Third item
+
+#### Unordered List
+* Item one
+  * Sub-item
+  * Sub-item
+* Item two
+* Item three
+
+### 3. Blockquotes
+
+> This is a simple blockquote
+>> This is a nested blockquote
+>>> Even deeper nesting
+
+### 4. Code Blocks
+
+```python
+def hello_world():
+    print("Hello, Markdown!")
+    
+class Example:
+    def __init__(self):
+        self.value = 42
+```
+
+```javascript
+function calculateSum(a, b) {
+    return a + b;
+}
+```
+
+### 5. Tables
+
+| Feature | Basic | Pro | Enterprise |
+|---------|:------|:---:|----------:|
+| Users | 10 | 100 | Unlimited |
+| Storage | 5GB | 50GB | 500GB |
+| Support | Email | 24/7 | Dedicated |
+| Custom Domain | ❌ | ✅ | ✅ |
+| Analytics | Basic | Advanced | Full Suite |
+
+### 6. Images and Links
+
+![Markdown Logo](https://markdown-here.com/img/icon256.png)
+[Visit GitHub](https://github.com)
+
+### 7. LaTeX Mathematical Expressions
+
+Inline equation: $E = mc^2$
+
+Block equation:
+$$
+\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+$$
+\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}
+$$
+
+### 8. Task Lists
+
+- [x] Write the introduction
+- [x] Add code examples
+- [ ] Complete documentation
+- [ ] Review and publish
+
+### 9. Horizontal Rules
+
+---
+***
+___
+
+### 10. Advanced Table with Alignment
+
+| Left-aligned | Center-aligned | Right-aligned |
+|:------------|:-------------:|-------------:|
+| col 3 is | some wordy text | $1600 |
+| col 2 is | centered | $12 |
+| zebra stripes | are neat | $1 |
+
+### 11. Definition Lists
+
+Term 1
+: Definition 1
+
+Term 2
+: Definition 2a
+: Definition 2b
+
+### 12. Footnotes
+
+Here's a sentence with a footnote[^1].
+
+[^1]: This is the footnote content.
+
+### 13. Custom HTML
+
+<details>
+<summary>Click to expand!</summary>
+
+This is hidden content that can be expanded.
+</details>
+
+<div align="center">
+  <h3>Centered content</h3>
+  <p>This entire section is centered</p>
+</div>
+
+### 14. Emoji Support
+
+:smile: :heart: :thumbsup: :rocket:
+
+### 15. Mermaid Diagrams
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+```mermaid
+flowchart TD;
+    A["第1章 绪论"] --> B["第2章 相关概念与主要理论"];
+    B --> C["第3章 影响因素分析"];
+    C --> D["第4章 指标评价分析"];
+    D --> E["第5章 问题与成因"];
+    E --> F["第6章 主要对策"];
+    F --> G["第7章 结论与展望"];
+    
+    subgraph Chapter1["第1章 绪论"]
+        A1["1.1 研究背景"] --> A2["1.2 国内外研究现状"];
+    end
+    
+    subgraph Chapter2["第2章 相关概念与主要理论"]
+        B1["2.1 相关概念"] --> B2["2.2 主要理论"];
+    end
+    
+    subgraph Chapter3["第3章 影响因素分析"]
+        C1["3.1 案例概况"] --> C2["3.2 问卷调查"];
+    end
+    
+    subgraph Chapter4["第4章 指标评价分析"]
+        D1["4.1 指标体系"] --> D2["4.2 层次分析法"];
+    end
+    
+    subgraph Chapter5["第5章 问题与成因"]
+        E1["5.1 主要问题"] --> E2["5.2 资产端问题成因"];
+    end
+    
+    subgraph Chapter6["第6章 主要对策"]
+        F1["6.1 资产端优化策略"] --> F2["6.2 REITs模式创新"];
+    end
+    
+    subgraph Chapter7["第7章 结论与展望"]
+        G1["7.1 结论"] --> G2["7.2 展望"];
+    end
+
+```
+### 16. Html Integration
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            margin: 0 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 0.9em;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 欢迎访问</h1>
+        <p>这是一个精美的HTML页面示例，展示了现代网页设计的基本元素和样式。</p>
+        
+        <button class="btn" onclick="showAlert()">点击我</button>
+        <button class="btn" onclick="changeColor()">改变颜色</button>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>📱 响应式设计</h3>
+                <p>适配各种设备屏幕</p>
+            </div>
+            <div class="feature">
+                <h3>🎨 现代样式</h3>
+                <p>美观的渐变和阴影</p>
+            </div>
+            <div class="feature">
+                <h3>⚡ 交互功能</h3>
+                <p>JavaScript增强体验</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert('你好！欢迎使用这个页面！');
+        }
+
+        function changeColor() {
+            const container = document.querySelector('.container');
+            const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#feca57'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            container.style.borderLeft = `5px solid ${randomColor}`;
+        }
+
+        // 页面加载动画
+        window.addEventListener('load', function() {
+            const container = document.querySelector('.container');
+            container.style.opacity = '0';
+            container.style.transform = 'translateY(30px)';
+            container.style.transition = 'all 0.6s ease';
+            
+            setTimeout(() => {
+                container.style.opacity = '1';
+                container.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
+```
+
+This comprehensive example showcases various Markdown features and formatting options. Note that some features might require specific Markdown processors or extensions to work properly.

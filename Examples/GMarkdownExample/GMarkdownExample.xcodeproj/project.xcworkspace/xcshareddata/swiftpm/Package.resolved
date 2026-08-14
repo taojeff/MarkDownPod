@@ -1,0 +1,60 @@
+{
+  "originHash" : "164dffb79ef96db22ff42015f235d6aa318da7e7e48b99da09e66ad6c0b1b7a4",
+  "pins" : [
+    {
+      "identity" : "mathjaxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/colinc86/MathJaxSwift.git",
+      "state" : {
+        "revision" : "e23d6eab941da699ac4a60fb0e60f3ba5c937459",
+        "version" : "3.4.0"
+      }
+    },
+    {
+      "identity" : "mpitextkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/meitu/MPITextKit.git",
+      "state" : {
+        "revision" : "6b2e616f2648bcb7e3bc1c739bac3fb4a2626eec",
+        "version" : "0.2.4"
+      }
+    },
+    {
+      "identity" : "nuke",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Nuke.git",
+      "state" : {
+        "revision" : "0ead44350d2737db384908569c012fe67c421e4d",
+        "version" : "12.8.0"
+      }
+    },
+    {
+      "identity" : "swift-cmark",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-cmark.git",
+      "state" : {
+        "revision" : "3bc2f3e25df0cecc5dc269f7ccae65d0f386f06a",
+        "version" : "0.4.0"
+      }
+    },
+    {
+      "identity" : "swift-markdown",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-markdown.git",
+      "state" : {
+        "revision" : "4aae40bf6fff5286e0e1672329d17824ce16e081",
+        "version" : "0.4.0"
+      }
+    },
+    {
+      "identity" : "swiftmath",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GIKICoder/SwiftMath.git",
+      "state" : {
+        "revision" : "1e49ab4e85eeb0986d0a63d1ca68f8a4b0b964d5",
+        "version" : "2.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
