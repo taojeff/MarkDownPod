@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'MarkdownPod'
+  s.name             = 'YSTMarkdownPod'
   s.version          = '0.1.1.2'
   s.summary          = 'A powerful and versatile Markdown rendering library for Swift developers'
   s.description      = <<-DESC
