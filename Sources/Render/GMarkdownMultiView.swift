@@ -8,7 +8,6 @@
 import Markdown
 import MPITextKit
 import UIKit
-import YSTBasicSDK
 
 // MARK: - Protocols
 
@@ -145,8 +144,8 @@ public class GMarkdownMultiView: UIView {
     
     private func commonInit() {
         addHandlers()
-        style.fonts.current = YSTBasicPublicTool.sharedManager().pingFangIgnoreSizeFont(16);
-        style.colors.current = YSTBasicPublicTool.sharedManager().uiColorFormValue("#333333")
+        style.fonts.current = UIFont(name: "PingFangSC-Regular", size: 16) ?? .systemFont(ofSize: 16)
+        style.colors.current = UIColor(hex: "#333333")
         style.paragraphStyle.lineSpacing = 2;
         style.paragraphStyle.paragraphSpacing = 10
         generator.style = style

@@ -8,7 +8,6 @@
 import Foundation
 import Markdown
 import UIKit
-import YSTBasicSDK
 
 ///  Font Style
 public protocol FontStyle {
@@ -168,7 +167,7 @@ public protocol Style {
 
 // 实现各个默认样式的结构体
 struct DefaultFontStyle: FontStyle {
-    var current: UIFont = YSTBasicPublicTool.sharedManager().pingFangIgnoreSizeFont(16)
+    var current: UIFont = UIFont(name: "PingFangSC-Regular", size: 16) ?? .systemFont(ofSize: 16)
     var h1: UIFont = .systemFont(ofSize: 18, weight: .bold)
     var h2: UIFont = .systemFont(ofSize: 18, weight: .bold)
     var h3: UIFont = .systemFont(ofSize: 18, weight: .bold)
@@ -181,7 +180,7 @@ struct DefaultFontStyle: FontStyle {
 }
 
 struct DefaultColorStyle: ColorStyle {
-    var current: UIColor = YSTBasicPublicTool.sharedManager().uiColorFormValue("#333333")
+    var current: UIColor = UIColor(hex: "#333333")
     var h1: UIColor = .black
     var h2: UIColor = .black
     var h3: UIColor = .black

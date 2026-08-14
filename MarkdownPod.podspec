@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MarkdownPod'
-  s.version          = '0.1.1.1'
+  s.version          = '0.1.1.2'
   s.summary          = 'A powerful and versatile Markdown rendering library for Swift developers'
   s.description      = <<-DESC
                        GMarkdown is a powerful and versatile Markdown rendering library designed for Swift developers. 
@@ -21,10 +21,11 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/taojeff/MarkDownPod'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'GIKICoder' => 'giki.biu@gmail.com' }
-  s.source           = { :git => 'https://github.com/taojeff/MarkDownPod', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/taojeff/MarkDownPod.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '13.0'
   s.swift_version = '5.0'
+  s.static_framework = true
 
   s.source_files = 'Sources/**/*.swift'
   
@@ -38,6 +39,8 @@ Pod::Spec.new do |s|
   s.dependency 'SwiftMath-pod', '2.0.1.pod'
   s.dependency 'MathJaxSwiftPod', '3.2.2.1'
   s.dependency 'MPITextKit','0.2.4'
+  s.dependency 'SwiftSoup', '2.11.3'
+  s.dependency 'SDWebImage', '5.21.5'
   
   # Frameworks
   s.frameworks = 'UIKit', 'Foundation', 'WebKit', 'JavaScriptCore', 'Photos'

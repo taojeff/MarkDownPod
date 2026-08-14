@@ -7,7 +7,6 @@
 
 import MPITextKit
 import UIKit
-import YSTBasicSDK
 
 open class GMarkdownCodeView: UIView {
     public var container: UIView!
@@ -190,9 +189,40 @@ open class GMarkdownCodeView: UIView {
     @objc private func codeCopyAction() {
         guard let markChunk = markChunk else { return }
         UIPasteboard.general.string = markChunk.codeSource
-        YSTBasicToast().show("内容已复制", gravity: TOAST_GRAVITY_CENTURE, length: TOAST_LENGTH_SHORT)
+        showCopyToast("内容已复制")
         if  markChunk.codeSource.isEmpty {
             onCopy?(markChunk.codeSource)
+        }
+    }
+
+    private func showCopyToast(_ message: String) {
+        let toast = UILabel()
+        toast.text = message
+        toast.textColor = .white
+        toast.backgroundColor = UIColor.black.withAlphaComponent(0.78)
+        toast.font = .systemFont(ofSize: 14)
+        toast.textAlignment = .center
+        toast.alpha = 0
+        toast.layer.cornerRadius = 6
+        toast.layer.masksToBounds = true
+        toast.translatesAutoresizingMaskIntoConstraints = false
+
+        addSubview(toast)
+        NSLayoutConstraint.activate([
+            toast.centerXAnchor.constraint(equalTo: centerXAnchor),
+            toast.centerYAnchor.constraint(equalTo: centerYAnchor),
+            toast.heightAnchor.constraint(greaterThanOrEqualToConstant: 32),
+            toast.widthAnchor.constraint(greaterThanOrEqualToConstant: 96),
+        ])
+
+        UIView.animate(withDuration: 0.18) {
+            toast.alpha = 1
+        } completion: { _ in
+            UIView.animate(withDuration: 0.18, delay: 1.2, options: []) {
+                toast.alpha = 0
+            } completion: { _ in
+                toast.removeFromSuperview()
+            }
         }
     }
 }
