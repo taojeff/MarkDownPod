@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'YSTMarkdownPod'
-  s.version          = '0.1.1.3'
+  s.version          = '0.1.1.4'
   s.summary          = 'A powerful and versatile Markdown rendering library for Swift developers'
   s.description      = <<-DESC
                        GMarkdown is a powerful and versatile Markdown rendering library designed for Swift developers. 
