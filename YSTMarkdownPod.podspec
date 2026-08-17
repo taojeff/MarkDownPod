@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   s.dependency 'MathJaxSwiftPod', '3.2.2.1'
   s.dependency 'MPITextKit','0.2.4'
   s.dependency 'SwiftSoup', '2.11.3'
-  s.dependency 'SDWebImage', '5.21.5'
+  s.dependency 'SDWebImage', '5.21.7'
   
   # Frameworks
   s.frameworks = 'UIKit', 'Foundation', 'WebKit', 'JavaScriptCore', 'Photos'
