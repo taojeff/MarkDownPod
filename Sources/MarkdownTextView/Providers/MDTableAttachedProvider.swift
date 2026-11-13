@@ -25,7 +25,7 @@ class MDTableAttachedProvider: MarkdownAttachedViewProvider {
             return attachedTableView
         }
         let table = GMarkTableView()
-        table.backgroundColor = .white
+        table.backgroundColor = .clear
         table.register(GMarkTableRichLabelCell.self, forCellReuseIdentifier: "GMarkTableRichLabelCell")
         table.dataSource = self
         table.style = tableStyle

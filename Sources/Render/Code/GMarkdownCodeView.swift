@@ -57,7 +57,7 @@ open class GMarkdownCodeView: UIView {
     }
 
     private func setupViews() {
-        backgroundColor = .white
+        backgroundColor = .clear
 
         container = UIView()
         container.backgroundColor = UIColor(hex: "#E7E7E7")
